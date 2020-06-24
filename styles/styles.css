@@ -1,6 +1,6 @@
 body{
-    background-color: black;
-   color: azure;
+    background-image: linear-gradient(black, #1e1f24);
+    color: azure;
     margin: 0 auto;
 }
 section{
@@ -32,4 +32,11 @@ section{
 #profile-link{
     margin-left: 3rem;
     padding-bottom: 3rem;
+}
+#logo{
+    float: left;
+    margin-left: 4rem;
+}
+footer{
+    text-align: center;
 }
