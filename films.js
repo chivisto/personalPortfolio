@@ -1,4 +1,4 @@
-export const films = [
+export default [
     {
         "title": "A New Hope",
         "episode_id": 4,
