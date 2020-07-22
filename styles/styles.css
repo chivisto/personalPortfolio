@@ -28,6 +28,9 @@ nav{
     background-color: darkslategrey;
     text-align: center;
 }
+#movies{
+    color: slategrey;
+}
 #projects{
     margin-left: 3rem;
 }
@@ -44,4 +47,8 @@ footer{
 }
 #fluff{
     margin: 0 auto;
+}
+.hero{
+    max-width: 75rem;
+    max-height: 25rem;
 }
