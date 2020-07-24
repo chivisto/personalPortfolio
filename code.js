@@ -1,37 +1,24 @@
 import films from './films.js';
-import starships from './starships.js';
+
+function createNode(element){
+    return document.createElement(element);
+}
+
+function append(parent, el){
+    return parent.appendChild(el);
+}
+
+const ul = document.querySelector('#movies');
 
 films.map(film =>{
     console.log(film.title, film.episode_id, film.opening_crawl, film.director, film.producer, 
         film.release_date)
+        let li = createNode('li'),
+            title = createNode('title'),
+            span = createNode('span');
+
+        span.innerHTML = `Title: ${film.title}, Director: ${film.director}`; 
+        append(li, title);
+        append(li, span);
+        append(ul, li);
 });
-
-//tests in the console
-function green() {
-    for (let i = 0; i < films.length; i++) {
-        console.log(films[i]);
-    }
-}
-green();
-//test in the console
-function blue() {
-    for (let i = 0; i < starships.length; i++) {
-        console.log(starships[i]);
-    }
-}
-blue();
-
-window.onload = allMovies();
-function allMovies() {
-    for (let i = 0; i < films.length; i++) {
-        document.getElementById("movies").innerHTML = films.join(" * ");
-        document.querySelector("p").innerHTML = films.join(" * ");
-    }
-}
-
-window.onload = allStarships();
-function allStarships() {
-    for (let i = 0; i < starships.length; i++) {
-        document.getElementById("starships").innerHTML = starships.join(" * ");
-    }
-}
