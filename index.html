@@ -1,48 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
+    <title>Personal Portfolio</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, max-scale=1" />
+    <link href="styles/styles.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     <script type="module" src="code.js"></script>
     <script type="module" src="films.js"></script>
-    <title>Personal Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <nav id="navbar">
-        <h1 id="logo">Isaac Covarrubias</h1>
-    </nav>
-    <main>
-        <section id="welcome-section">
-            <img class="hero" src="img/stars.jpg">
-            <h1 class="hero">Welcome to my portfolio!</h1>
-        </section>
-        <section id="projects">
-            <h2 class="project-tile">
-                <a href="https://www.freecodecamp.org/isaaccovarrubias">
-                    <h1>CodeCamp</h1>
-                </a>
-                <a href="https://reverent-jang-8a5ef4.netlify.app/">
-                    <h1>Netlify</h1>
-                </a>
-            </h2>
-            <a href="https://github.com/chivisto/personalPortfolio" target="_blank" title="My Github Account"
-                id="profile-link">Github</a>
-        </section>
-        <section id="fluff">
-            <p>
+    <div id="wrapper">
+        <!-- Header -->
+        <div id="headWrapper">
+            <header>
+                <h1>
+                    Isaac Covarrubias
+                </h1>
+            </header>
+        </div>
 
+        <!-- Navigation -->
+        <div>
+            <nav>
+                <ul class="navLinks">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="https://github.com/chivisto/personalPortfolio">Github</a></li>
+                    <li><a href="https://app.netlify.com/">Netlify</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Main -->
+        <main>
+            <img class="hero1" src="img/stars.jpg" alt="starwars" />
+            <h1>Personal Portfolio</h1>
+            <p>
+                This is a personal portoflio that was made for DGM 1600, while at UVU. Below you will find some
+                info on Star Wars that is being displayed with JS.
             </p>
-        </section>
-        <p id="movies"></p>
-        <p id="starships"></p>
-        <p id="test"></p>
-    </main>
-    <footer>
-        <p>Isaac Covarrubias DGM 1600</p>
-    </footer>
+            <h1>Star Wars Films:</h1>
+            <ul id="movies"></ul><br>
+
+            <img class="mainImg" src="img/space.jpg" alt="Space" />
+
+
+
+            <p class="outtro">“No. I am your father.” — Darth Vader</p>
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; &bull; Isaac Covarrubias &bull; Personal Portoflio DGM 1600</p>
+        </footer>
+    </div>
 </body>
 
 </html>
