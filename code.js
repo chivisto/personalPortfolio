@@ -1,24 +1,21 @@
-import films from './films.js';
+//All API's I am pulling from
+let characters = new Request('https://rickandmortyapi.com/api/character/');
+let location = new Request('https://rickandmortyapi.com/api/location/');
+let episode = new Request('https://rickandmortyapi.com/api/episode/');
 
-function createNode(element){
-    return document.createElement(element);
-}
 
-function append(parent, el){
-    return parent.appendChild(el);
-}
+//Get all characters of Rick & Morty from API
+fetch(characters)
+  .then(response => response.json())
+  .then(data => console.log(data));
 
-const ul = document.querySelector('#movies');
-
-films.map(film =>{
-    console.log(film.title, film.episode_id, film.opening_crawl, film.director, film.producer, 
-        film.release_date)
-        let li = createNode('li'),
-            title = createNode('title'),
-            span = createNode('span');
-
-        span.innerHTML = `Title: ${film.title}, Director: ${film.director}`; 
-        append(li, title);
-        append(li, span);
-        append(ul, li);
-});
+//Get all locations of Rick & Morty characters from API
+  fetch(location)
+  .then(response => response.json())
+  .then(data => console.log(data));
+  
+//Get all episodes of Rick & Morty from API
+  fetch(episode)
+  .then(response => response.json())
+  .then(data => console.log(data));
+  
