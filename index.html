@@ -37,17 +37,23 @@
         <!-- Main -->
         <main>
             <img class="hero1" src="img/rick.jpg" alt="rick" />
-            <h1>Personal Portfolio</h1>
-            <p>
-                This is a personal portoflio that includes my Github as well as some skills in JS, ES6 and Array munipulation.
+            <h1 class="title1">Personal Portfolio</h1>
+            <p class="desc">
+                This is a personal portoflio that includes my Github as well as some skills in JS, ES6 and Array
+                munipulation below using a
+                Rick and Morty API.
             </p>
-            <h1>All Rick & Morty Characters:</h1>
-            <div>
+            <h1 class="title2">All Rick & Morty Characters:</h1>
+            <div class="container">
                 <ul id="characters"></ul><br>
-            </div>.
-            <button id="previousPge" value="Refresh" onClick="refresh(this)"> Click to unload the selected page in the Api</button>
-            <h2>Click to load the next page in the Rick & Morty API:</h1>
-            <button id="nextPge">Next Page</button>
+            </div>
+
+
+            <h2 class="title2">Click to load the next page in the Rick & Morty API or reload the page:</h1>
+                <button id="nextPge">Next Page</button><br>
+                <input class="reload" type="button" value="Reload Page" onClick="document.location.reload(true)">
+                
+
         </main>
 
         <!-- Footer -->
