@@ -53,7 +53,7 @@ function nextPage() {
             img = createNode('img'),
             span = createNode('span');
           img.src = char.image;
-          span.innerHTML = `${char.name}`;
+          span.innerHTML = `${char.name}` ;
 
           append(li, img);
           append(li, span);
@@ -65,15 +65,11 @@ function nextPage() {
       });
       pageNumAdd++;
   } else {
-    alert('Whoops, thats the end.')
+    alert('Whoops, thats all the characters.')
   }
   console.log(pageNumAdd);
 }
 
-function refresh(){
-  window.location.reload('Refresh');
-
-}
 
 
 //Possibly add this code in later? Not sure what to do with it though
