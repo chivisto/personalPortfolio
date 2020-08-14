@@ -69,7 +69,3 @@ function nextPage() {
   }
   console.log(pageNumAdd);
 }
-
-
-
-
