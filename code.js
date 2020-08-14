@@ -72,26 +72,4 @@ function nextPage() {
 
 
 
-//Possibly add this code in later? Not sure what to do with it though
 
-//Get all locations of Rick & Morty characters from API
-// fetch(location)
-//   .then((resp) => resp.json())
-//   .then(function (data) {
-//     let local = data.results;
-//     return local.map(function (where) {
-//       let li = createNode('li'),
-//         span = createNode('span');
-//       span.innerHTML = `${where.id} ${where.id}`;
-//       append(li, span);
-//       append(ul, li);
-//     })
-//   })
-//   .catch(function (error) {
-//     console.log(error);
-//   });
-
-//Get all episodes of Rick & Morty from API
-// fetch(episode)
-//   .then(response => response.json())
-//   .then(data => console.log(data));
